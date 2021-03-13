@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+ </head>
+<body id="body">
+    <div class="overlay"></div>
+        <div class="player-container" id="play-container">
+             <!--<img src="/img/backstar2.jpg" alt="">-->
+           <!--   <div class="background">
+                 <h4> الفنان</h4>
+             </div> -->
+         <!-----song----->
+       <!--  <div class="side"> -->
+            <div class="img-container">
+                <img src="/img/hussin2.jpg" alt=""  id="main-img" >
+                <!-- <i class="fas fa-heart" onclick="repeat()"></i> -->
+               <!--  <h3>حسين الجسمي</h3> -->
+                <!-- <i class="fas fa-play" id="play"></i> -->
+            </div>
+            <audio src="/music/hussin.mp3"></audio>
+            
+             <!------prograss------->
+             <div class="progress-container">
+                <i class="fas fa-redo-alt"></i>
+                <div class="prograss-container" id="prograss-container">
+                    <div class="prograss" id="prograss"></div>
+                     <div class="duration-warper">
+                         <span id="curent-time">0:00</span>
+                         <span id="duration">3:23</span>
+                     </div>
+                 </div>
+                 <i class="fas fa-heart"></i>
+             </div>
+
+             <div class="text-content">
+               <h2 id="title">Without Me</h2>
+               <h3 id="artist">Halsey</h3>
+            </div>
+             <!-------control------->
+              <div class="play-control">
+
+                <i class="fas fa-backward" id="prev" title="Prev" ></i>  
+                <i class="fas fa-play" id="play"></i>
+                <i class="fas fa-forward" id="next" title="forward" ></i>
+ 
+        </div>
+        <div class="sound">
+            <i class="fas fa-volume-down"></i>
+              <input type="range" min="0" max="1" step="0.1"  id="volume" onchange="setVolume()" value="0.5">
+              <i class="fas fa-volume-up"></i>
+            </div>
+         </div>  
+      
+     
+      
+       
+    <!-- Script -->
+    <script src="script.js"></script>  
+</body>
+</html>

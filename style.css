@@ -1,0 +1,340 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mada:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lateef&family=Mada:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&family=Lateef&family=Mada:wght@300&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background:#3536553b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'El Messiri', sans-serif;
+  font-size: 13px;
+  font-weight: 900;
+  cursor: pointer;
+  position: relative;
+}
+
+/*  
+.overlay  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.60);
+} */
+
+
+
+
+.player-container {
+  height: 34rem;
+  width: 270px;
+  background: whitesmoke/* #eaebee */;
+  /* box-shadow: 0 15px 30px rgb(0 0 0 / 30%); */
+ /*  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+  box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+}
+
+.img-container {
+  height: 300px;
+  width: 270px;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+   border-bottom-right-radius: 70px;
+   border-bottom-left-radius: 70px;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  
+}
+
+ 
+.text-content {
+  margin: 0;
+  text-align: center;
+  position: absolute;
+  bottom: 29%;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.text-content h2 {
+  font-size: 22px;
+  font-weight: 100;
+ /*  margin-top: -14px; */
+  width: 800px;
+}
+
+.text-content h3 {
+  font-size: 13px;
+  font-weight: 100;
+  margin-top: -18px;
+}
+
+/*prograss-container*/
+
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  top: 8%;
+  right: 1px;
+  margin: 50px 10px;
+}
+
+.progress-container .fas {
+  font-size: 16px;
+  color: rgb(170, 164, 164);
+}
+
+ 
+.progress-container .fa-redo-alt.repeat {
+  color: rgb(105, 104, 104);
+}
+.progress-container .fa-heart.active {
+  color: #89000e;
+}
+
+.prograss-container {
+  background: rgb(241 230 230);
+  border-radius: 5px;
+  cursor: pointer;
+  height: 4px;
+  width: 70%;
+}
+
+.prograss {
+  background: rgb(46, 43, 43);
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+.duration-warper {
+  position: relative;
+  top: -25px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+
+/*Controls*/
+.play-control {
+  position: absolute;
+  bottom: 13%;
+  right: 1%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ /*  box-shadow: rgb(99 99 99 / 50%) 0px 2px 8px 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px; */
+}
+
+
+#play {
+  color: #fff;
+  background: #ffffff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+ 
+.play-control img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+ 
+
+ .play-control .fas {
+  font-size: 24px;
+    color: #000;
+    margin: 0 10px;
+}
+/* 
+.fa-play-circle {
+  color: #000;
+  outline: none;
+  border-radius: 50%;
+  font-size: 50px;
+  outline: none;
+  cursor: pointer;
+   
+}
+.fa-pause-circle {
+  color: #000;
+  outline: none;
+  border-radius: 50%;
+  font-size: 50px;
+  outline: none;
+  cursor: pointer;
+  
+} */
+
+ 
+.sound{
+  position: relative;
+  bottom: -15%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: rgb(99 99 99 / 50%) 0px 2px 8px 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  padding: 15px;
+  font-size: 15px;
+}
+
+.sound input {
+  height: 3px;
+}
+ 
+.sound .fas {
+  font-size: 16px;
+  color: rgb(170, 164, 164);
+}
+
+input[type=range]{
+  -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 300px;
+  height: 5px;
+  background: #ddd;
+  border: none;
+  border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  background: rgb(46, 43, 43);
+  margin-top: -4px;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #ccc;
+}
+input[type=range]{
+  /* fix for FF unable to apply focus style bug  */
+  border: 1px solid white; 
+}
+
+input[type=range]::-moz-range-track {
+  width: 300px;
+  height: 5px;
+  background: #ddd;
+  border: none;
+  border-radius: 3px;
+}
+
+input[type=range]::-moz-range-thumb {
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: rgb(46, 43, 43);
+}
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring{
+  outline: 1px solid white;
+  outline-offset: -1px;
+}
+
+input[type=range]:focus::-moz-range-track {
+  background: #ccc;
+}
+
+input[type=range]::-ms-track {
+  width: 300px;
+  height: 5px;
+  
+  /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+  background: transparent;
+  
+  /*leave room for the larger thumb to overflow with a transparent border */
+  border-color: transparent;
+  border-width: 6px 0;
+
+  /*remove default tick marks*/
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #777;
+  border-radius: 10px;
+}
+input[type=range]::-ms-fill-upper {
+  background: #ddd;
+  border-radius: 10px;
+}
+input[type=range]::-ms-thumb {
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: rgb(46, 43, 43);
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #888;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #ccc;
+} 
+
+
+
+/*===================================== MEDIA QUERY ============================*/
+
+@media only screen and (max-width: 425px){
+	/*Small smartphones [325px -> 425px]*/
+   body {
+     width: 100vw;
+     height: 100vh;
+     margin: 0px;
+   }
+   .player-container {
+      margin-bottom: 40px;
+  }
+}
